@@ -149,10 +149,15 @@ export function formatReadingTime(minutes: number, locale: Locale): string {
   return `${minutes} ${dictionary[locale].readingTimeSuffix}`;
 }
 
+function withBase(path: string): string {
+  const base = import.meta.env.BASE_URL.replace(/\/$/, "");
+  return `${base}/${path}`;
+}
+
 export function blogIndexPath(locale: Locale): string {
-  return `/blog/${locale}`;
+  return withBase(`blog/${locale}`);
 }
 
 export function articlePath(slug: string, locale: Locale): string {
-  return `/blog/${slug}/${locale}`;
+  return withBase(`blog/${slug}/${locale}`);
 }
