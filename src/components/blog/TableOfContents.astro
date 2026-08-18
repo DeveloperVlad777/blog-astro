@@ -1,0 +1,82 @@
+---
+import { dictionary, type Locale } from "../../lib/i18n";
+
+interface Heading {
+  depth: number;
+  slug: string;
+  text: string;
+}
+
+interface Props {
+  headings: Heading[];
+  lang: Locale;
+}
+
+const { headings, lang } = Astro.props;
+const items = headings.filter((h) => h.depth === 2);
+const t = dictionary[lang];
+---
+
+{
+  items.length > 0 && (
+    <nav class="toc" aria-label={t.tocTitle}>
+      <p class="toc-title">{t.tocTitle}</p>
+      <ol class="toc-list">
+        {items.map((h) => (
+          <li>
+            <a href={`#${h.slug}`}>{h.text}</a>
+          </li>
+        ))}
+      </ol>
+    </nav>
+  )
+}
+
+<style>
+  .toc {
+    background: var(--color-surface);
+    border: 1px solid var(--color-border-strong);
+    border-radius: var(--radius-md);
+    padding: 22px 24px;
+    margin: 0 0 32px;
+  }
+
+  .toc-title {
+    color: var(--color-heading);
+    font-size: 18px;
+    line-height: 1.35;
+    font-weight: 700;
+    margin: 0 0 14px;
+  }
+
+  .toc-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .toc-list a {
+    color: var(--color-text);
+    font-size: 15px;
+    line-height: 1.5;
+    transition: color 0.2s ease;
+  }
+
+  .toc-list a:hover {
+    color: var(--color-accent);
+  }
+
+  @media (max-width: 767px) {
+    .toc {
+      padding: 18px;
+    }
+
+    .toc-title {
+      font-size: 16px;
+    }
+
+    .toc-list a {
+      font-size: 14px;
+    }
+  }
+</style>

@@ -1,0 +1,78 @@
+---
+import { dictionary, type Locale, type CategoryKey } from "../../lib/i18n";
+
+interface Props {
+  lang: Locale;
+  categories: CategoryKey[];
+  gridId: string;
+}
+
+const { lang, categories, gridId } = Astro.props;
+const t = dictionary[lang];
+---
+
+<div class="filter" data-target={gridId}>
+  <button class="pill" data-filter="all" aria-pressed="true">{t.allCategory}</button>
+  {
+    categories.map((key) => (
+      <button class="pill" data-filter={key} aria-pressed="false">
+        {t.categories[key]}
+      </button>
+    ))
+  }
+</div>
+
+<style>
+  .filter {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 40px 0;
+  }
+
+  .pill {
+    padding: 10px 20px;
+    border-radius: var(--radius-pill);
+    background: var(--color-surface);
+    border: 1px solid var(--color-border-strong);
+    color: var(--color-text);
+    font-size: 14px;
+    font-weight: 600;
+    transition:
+      background 0.2s ease,
+      color 0.2s ease,
+      border-color 0.2s ease;
+  }
+
+  .pill:hover {
+    border-color: var(--color-accent-dim);
+  }
+
+  .pill[aria-pressed="true"] {
+    background: var(--color-accent);
+    border-color: var(--color-accent);
+    color: var(--color-on-accent);
+  }
+</style>
+
+<script>
+  document.querySelectorAll<HTMLElement>(".filter").forEach((filter) => {
+    const targetId = filter.dataset.target;
+    const grid = targetId ? document.getElementById(targetId) : null;
+    if (!grid) return;
+
+    const buttons = Array.from(filter.querySelectorAll<HTMLButtonElement>(".pill"));
+    const cards = Array.from(grid.querySelectorAll<HTMLElement>("[data-category]"));
+
+    buttons.forEach((btn) => {
+      btn.addEventListener("click", () => {
+        const value = btn.dataset.filter;
+        buttons.forEach((b) => b.setAttribute("aria-pressed", String(b === btn)));
+        cards.forEach((card) => {
+          const show = value === "all" || card.dataset.category === value;
+          card.style.display = show ? "" : "none";
+        });
+      });
+    });
+  });
+</script>

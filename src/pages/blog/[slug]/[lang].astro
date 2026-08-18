@@ -1,0 +1,95 @@
+---
+import { getCollection, render } from "astro:content";
+import BaseLayout from "../../../layouts/BaseLayout.astro";
+import BackLink from "../../../components/blog/BackLink.astro";
+import ArticleHeader from "../../../components/blog/ArticleHeader.astro";
+import ArticleHero from "../../../components/blog/ArticleHero.astro";
+import VideoEmbed from "../../../components/blog/VideoEmbed.astro";
+import TableOfContents from "../../../components/blog/TableOfContents.astro";
+import FaqAccordion from "../../../components/blog/FaqAccordion.astro";
+import FinalPromo from "../../../components/blog/FinalPromo.astro";
+import { getAllSlugLangPairs } from "../../../lib/blog";
+import { dictionary, blogIndexPath, type Locale } from "../../../lib/i18n";
+import "../../../styles/article-body.css";
+
+export async function getStaticPaths() {
+  const pairs = await getAllSlugLangPairs();
+  const entries = await getCollection("blog");
+  return pairs.map(({ slug, lang }) => {
+    const entry = entries.find((e) => e.data.articleId === slug && e.data.lang === lang);
+    return { params: { slug, lang }, props: { entry } };
+  });
+}
+
+const { entry } = Astro.props;
+if (!entry) throw new Error("Article entry not found for this route");
+
+const { lang } = Astro.params as { slug: string; lang: Locale };
+const { Content, headings } = await render(entry);
+const t = dictionary[lang];
+const data = entry.data;
+const finalPromo = data.finalPromo ?? t.finalPromo;
+---
+
+<BaseLayout title={`${data.title} | Hash Hedge Blog`} description={data.description}>
+  <article class="container section">
+    <BackLink href={blogIndexPath(lang)} label={t.backLinkLabel} />
+
+    <ArticleHeader
+      hook={data.hook}
+      title={data.title}
+      readingMinutes={data.readingMinutes}
+      publishDate={data.publishDate}
+      lang={lang}
+    />
+
+    <ArticleHero image={data.heroImage} alt={data.heroImageAlt} />
+
+    {data.intro?.map((paragraph) => <p class="intro-paragraph">{paragraph}</p>)}
+
+    {
+      data.video && (
+        <VideoEmbed
+          youtubeId={data.video.youtubeId}
+          alt={data.video.alt}
+          caption={data.video.caption}
+          label={data.video.label}
+        />
+      )
+    }
+
+    <TableOfContents headings={headings} lang={lang} />
+
+    <div class="article-body">
+      <Content />
+    </div>
+
+    {data.faq && data.faq.length > 0 && <FaqAccordion items={data.faq} />}
+
+    <FinalPromo
+      title={finalPromo.title}
+      description={finalPromo.description}
+      buttonText={finalPromo.buttonText}
+      buttonUrl={finalPromo.buttonUrl}
+    />
+  </article>
+</BaseLayout>
+
+<style>
+  .section {
+    padding-block: 60px 100px;
+  }
+
+  .intro-paragraph {
+    font-size: 17px;
+    line-height: 1.7;
+    color: var(--color-text);
+    margin: 0 0 18px;
+  }
+
+  @media (max-width: 767px) {
+    .intro-paragraph {
+      font-size: 16px;
+    }
+  }
+</style>
