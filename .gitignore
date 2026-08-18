@@ -20,5 +20,9 @@ npm-debug.log*
 # jetbrains setting folder
 .idea/
 
+# local/session-specific Claude Code state (not shared project config)
+.claude/settings.local.json
+.claude/scheduled_tasks.lock
+
 # saved trial archive (kept locally for reference, not part of the project)
 hashhedge.zip
