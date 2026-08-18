@@ -16,5 +16,9 @@ export default defineConfig({
     // `redirects` destinations are used verbatim (not base-prefixed like
     // regular page links), so the base has to be included by hand here.
     "/blog": `${basePath}/blog/en`,
+    // The project has no real homepage yet (that lives outside this repo
+    // on hashhedge.com) — only add a root redirect for the Pages preview,
+    // so the bare preview URL doesn't 404.
+    ...(isGithubPagesBuild ? { "/": `${basePath}/blog/en` } : {}),
   },
 });
