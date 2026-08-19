@@ -1,0 +1,104 @@
+---
+lang: en
+articleId: what-is-a-prop-trading-firm
+title: "What Is a Prop Trading Firm?"
+hook: "UNVEILING THE WORLD OF PROPRIETARY TRADING"
+description: "A proprietary trading firm is a company that provides capital to traders at a fee from their profits. Learn more about what a prop firm is and how it works."
+category: prop-trading
+publishDate: 2025-07-06
+readingMinutes: 6
+heroImage: "./en/hero.jpg"
+heroImageAlt: "What's behind prop firms?"
+intro:
+  - "Many traders have developed smart strategies but lack sufficient capital to execute them. A prop firm solves this problem by providing the capital in exchange for a share of the trading profits. It gives significant capital to professional traders and splits the profit generated from their trading activities. Profit-sharing percentages depend on specific agreements between the prop firm and individual traders."
+  - "Prop firms provide experienced traders with access to capital that they would otherwise not easily find. When they execute trades and potentially earn profits, the profits are split between traders and the prop firms that provided the money. It's a beneficial business model for both parties."
+faq:
+  - question: "What is a prop firm challenge, and how can I get funded?"
+    answer: "A challenge is an initial evaluation that prop firms give to traders. This challenge tests your trading skills, risk tolerance, and adherence to the prop firm's rules. You can get funded by passing this test."
+  - question: "What amount of funds can I achieve?"
+    answer: "The amount varies according to your prop firm. For example, Hash Hedge offers trading accounts ranging from $5,000 to $100,000."
+  - question: "How can I pass the prop firm challenge (exam)?"
+    answer: "You can pass the challenge by applying well-thought-out trading strategies to meet profit targets. You need to meet these targets while adhering to the prop firm's trading rules."
+  - question: "How should I choose a prop firm to trade with?"
+    answer: "When choosing a crypto prop firm, consider the number of supported assets, leverage options, and any timing restrictions. For example, Hash Hedge supports 200+ crypto assets, offers up to 5x leverage, and has no restrictions on trading news."
+finalPromo:
+  title: "Ready to Trade with Prop Firm Capital?"
+  description: "Hash Hedge is the #1 crypto prop trading platform. Get funding up to **$150K** and withdraw up to **90% of your profits** in USDT straight to your wallet."
+  buttonText: "Start Challenge"
+  buttonUrl: "https://app.hashhedge.com/en/register/"
+---
+
+## What is proprietary trading?
+
+Proprietary trading occurs when an individual trades cryptocurrency, derivatives, and other financial instruments using capital provided by a proprietary firm. Any profit generated from the trading strategies is split between the individual and their prop firm.
+
+Since 2020, prop trading has become an increasingly popular way for talented traders to access capital and earn profits. It helps traders apply informed trading decisions and earn substantial profits for themselves and their prop firm.
+
+## How does prop trading work?
+
+Prop trading occurs when a trading desk at a financial institution decides to allocate capital for self-promoting financial transactions. Some companies also specialize solely in prop trading rather than as divisions of conventional financial firms.
+
+Capital is given to skilled traders, who use it for speculative trading strategies. Prop traders capitalize on market inefficiencies and movements to generate positive returns. They develop advanced strategies to capitalize on price movements across various asset types, but significant risks are also involved.
+
+![How prop trading works: evaluation, get funded, split profits](./shared/how-prop-trading-works.png)
+
+<div class="banner">
+<div class="banner-content">
+<div class="banner-logo"><svg width="602" height="567" viewBox="0 0 602 567" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M507.435 265.841L300.586 469.72L301.222 566.465L601.846 265.841L336.005 0V370.19L400.602 310.562V161.492L507.435 265.841Z" fill="#FCD535"></path><path d="M94.4666 265.841L300.473 469.72L301.109 566.465L0.0557861 265.841L265.897 0V370.19L201.3 310.562V161.492L94.4666 265.841Z" fill="#FCD535"></path></svg></div>
+<div class="banner-title">Start trading with Hash Hedge today</div>
+</div>
+<a class="banner-button" href="https://app.hashhedge.com/en/register/">Start Challenge</a>
+</div>
+
+## How do prop firms operate?
+
+Below is a step-by-step breakdown of how prop firms work:
+
+- **Evaluation.** During the evaluation stage, traders must pass a demo challenge that assesses their skills and risk management abilities.
+- **Funding.** If the trader passes the challenge, they are given live capital to trade with. Prop firms usually have strict risk management rules, such as maximum drawdown limits, to prevent traders from taking excessive risks. The profits generated by traders are split with the prop firm based on a pre-existing agreement. Splits typically range from 50% to 80% for traders, with the remaining percentage going to the prop firm.
+
+## Advantages and disadvantages of prop trading
+
+### Advantages
+
+- **Access to capital.** Prop firms provide traders with access to capital that they can't obtain on their own. Traders enjoy little to no upfront costs when working with prop firms.
+- **High profit potential.** Skilled traders can generate substantial profits without incurring excessive risk to their own funds.
+- **Advanced tools.** Prop traders gain access to advanced technical analysis tools, such as real-time data feeds and machine learning models, that they would struggle to obtain independently.
+- **Performance-based compensation.** The profit-sharing model aligns the incentives between the prop firms and the traders managing their capital.
+
+### Disadvantages
+
+- **Untrustworthy prop firms.** Some fake prop firms make money mainly from evaluation fees rather than profit-sharing. Thorough research before selecting a prop firm is required to avoid falling into this problem.
+- **Stress.** The performance-driven nature of prop trading can be particularly stressful, especially for new traders with lesser risk management skills.
+- **Evaluation fees.** Prop traders pay evaluation fees to access capital from a prop firm. Prop firms don't give money away for free, so they charge these fees as part of their business model.
+
+## Types of prop firms
+
+Prop firms are mainly institutional, retail, or hybrid, with the main differences lying in their capital allocation methods.
+
+Institutional prop firms trade their own capital, often operating within investment banks, brokerage firms, hedge funds, and other financial institutions. They directly employ prop traders who use sophisticated algorithms and techniques to capitalize on market movements.
+
+Retail prop firms rely on independent individual traders instead of in-house traders. Traders often pay a fee or pass an evaluation to get funded. Then, profits are split between the traders and the prop firm.
+
+Hybrid firms combine the institutional and retail models. They employ in-house prop traders to invest their money and also provide capital to independent traders, splitting the profits.
+
+## Risks associated with a prop firm
+
+- **Market risks.** Prop traders can lose money due to unfavorable market conditions even with practical trading strategies. Sudden shocks, such as conflicts and changes in economic policy, can drastically affect market conditions.
+- **Leverage risks.** Traders with high risk tolerance often use borrowed money to amplify their investments. When leveraged, even a minor market downturn can result in significant losses or even liquidation.
+- **Liquidity risks.** Low liquidity for specific assets can prevent traders from exiting their investments at the desired price.
+- **Concentration risks.** Relying on a specific strategy or asset class can make traders vulnerable to short-term market swings.
+
+## How are prop firms regulated
+
+Retail prop firms are currently lightly regulated because they trade with their own capital, not client funds. Some regulations apply, such as following general trading rules, but prop firms aren't heavily regulated.
+
+## Example of a prop firm
+
+### Hash Hedge
+
+Hash Hedge is a crypto prop firm that gives traders a choice of 200+ crypto assets to trade and a leverage of up to 5x. New assets are listed frequently, unlike many crypto prop firms that only work with mainstream coins like BTC and ETH.
+
+![Hash Hedge homepage: trade profitably without risk to your capital](./shared/hash-hedge-homepage.png)
+
+Hash Hedge has no hidden commissions, fees, or restrictions on news and weekend trading. It's available 24/7 to seasoned trading professionals, giving them a competitive edge compared to other prop firms with timing restrictions.
