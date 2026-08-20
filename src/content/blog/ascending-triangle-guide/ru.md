@@ -7,7 +7,7 @@ description: "Узнайте, что такое восходящий треуг�
 category: technical-analysis
 publishDate: 2025-10-22
 readingMinutes: 8
-heroImage: "./en/hero.jpg"
+heroImage: "./ru/hero.jpg"
 heroImageAlt: "Восходящий треугольник: определение, признаки и торговые стратегии"
 intro:
   - "Перестаньте гадать — торгуйте без риска для своих средств."

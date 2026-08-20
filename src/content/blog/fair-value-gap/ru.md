@@ -7,7 +7,7 @@ description: "Изучите Fair Value Gap (FVG) в криптотрейдин�
 category: technical-analysis
 publishDate: 2025-09-11
 readingMinutes: 8
-heroImage: "./en/hero.jpg"
+heroImage: "./ru/hero.jpg"
 heroImageAlt: "Fair Value Gap простыми словами: что это и как его торговать"
 faq:
   - question: "Всегда ли FVG закрываются?"

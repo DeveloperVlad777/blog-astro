@@ -7,7 +7,7 @@ description: "Как выбрать лучшую крипто проп-фирм�
 category: prop-trading
 publishDate: 2026-06-18
 readingMinutes: 7
-heroImage: "./en/hero.png"
+heroImage: "./ru/hero.png"
 heroImageAlt: "Трейдер сравнивает условия крипто проп-фирм при выборе фандед-счета в 2026 году"
 faq:
   - question: "Что такое крипто проп-фирма?"

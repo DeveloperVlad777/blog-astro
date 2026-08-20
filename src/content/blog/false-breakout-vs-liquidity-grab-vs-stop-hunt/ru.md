@@ -7,7 +7,7 @@ description: "Как отличить ложный пробой от захва�
 category: technical-analysis
 publishDate: 2026-06-25
 readingMinutes: 10
-heroImage: "./en/hero.png"
+heroImage: "./ru/hero.png"
 heroImageAlt: "Ложный пробой, захват ликвидности и охота на стопы на графике BTC/USDT — сравнение паттернов"
 faq:
   - question: "В чём главное отличие ложного пробоя от захвата ликвидности?"

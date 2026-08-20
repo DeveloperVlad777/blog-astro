@@ -7,7 +7,7 @@ description: "Узнайте, как работает CFD торговля: пр
 category: crypto-basics
 publishDate: 2025-08-15
 readingMinutes: 10
-heroImage: "./en/hero.jpg"
+heroImage: "./ru/hero.jpg"
 heroImageAlt: "Что такое CFD трейдинг: объясняем простыми словами"
 faq:
   - question: "Законна ли торговля CFD в моей стране?"

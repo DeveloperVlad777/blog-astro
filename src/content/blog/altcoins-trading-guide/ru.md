@@ -7,7 +7,7 @@ description: "Узнайте, что такое альткоины. Как по�
 category: crypto-basics
 publishDate: 2025-10-27
 readingMinutes: 12
-heroImage: "./en/hero.jpg"
+heroImage: "./ru/hero.jpg"
 heroImageAlt: "Трейдинг альткоинами: как покупать, торговать и зарабатывать"
 ---
 

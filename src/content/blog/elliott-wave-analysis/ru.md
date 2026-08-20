@@ -7,7 +7,7 @@ description: "Изучите волновой анализ Эллиота для
 category: technical-analysis
 publishDate: 2025-09-10
 readingMinutes: 12
-heroImage: "./en/hero.jpg"
+heroImage: "./ru/hero.jpg"
 heroImageAlt: "Что такое волновой анализ Эллиотта"
 faq:
   - question: "Можно ли применять волны Эллиотта к любой криптовалюте?"

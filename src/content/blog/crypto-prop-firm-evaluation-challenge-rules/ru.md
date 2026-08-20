@@ -7,7 +7,7 @@ description: "Как работают правила проп-челленджа
 category: prop-trading
 publishDate: 2026-07-20
 readingMinutes: 12
-heroImage: "./en/hero.jpg"
+heroImage: "./ru/hero.jpg"
 heroImageAlt: "Правила проп-челленджа: дневная просадка, максимальная просадка и цель по прибыли"
 intro:
   - "Большинство трейдеров, которые заходят на страницу [проп-фирмы](https://www.hashhedge.com/blog/best-crypto-prop-firms-2026/ru) впервые, смотрят на два числа: размер счета и стоимость челленджа. Правила обычно читают не до конца."
