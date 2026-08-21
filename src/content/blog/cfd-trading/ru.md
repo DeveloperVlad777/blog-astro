@@ -49,14 +49,6 @@ CFD — чистая спекуляция: вы работаете с движе
 
 Основная разница между CFD и спотовой торговлей.
 
-<div class="banner">
-<div class="banner-content">
-<div class="banner-logo"><svg width="602" height="567" viewBox="0 0 602 567" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M507.435 265.841L300.586 469.72L301.222 566.465L601.846 265.841L336.005 0V370.19L400.602 310.562V161.492L507.435 265.841Z" fill="#FCD535"></path><path d="M94.4666 265.841L300.473 469.72L301.109 566.465L0.0557861 265.841L265.897 0V370.19L201.3 310.562V161.492L94.4666 265.841Z" fill="#FCD535"></path></svg></div>
-<div class="banner-title">Начни торговать с Hash Hedge уже сегодня</div>
-</div>
-<a class="banner-button" href="https://app.hashhedge.com/en/register/">Начать челлендж</a>
-</div>
-
 ## Плюсы CFD
 
 CFD даёт доступ к рынкам без всей инфраструктуры инвестора. Не нужны кошельки, холодное хранение или дни на ожидание перевода.
